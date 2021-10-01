@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+ 
+ body{
+     background: black;
+ }
+ 
+ 
+ .sidebar{
+     display: flex;
+     justify-content: baseline;
+     flex-direction: column;
+     position:absolute;
+     bottom: 30px;
+     mix-blend-mode:difference;
+ }
+ 
+ .sidebar li{
+     list-style: none;
+     padding-top: 52px;
+ }
+ 
+ .sidebar a{
+     text-decoration: none;
+     color: white;
+     margin: 30px;
+     padding-bottom: 50px;
+ }
