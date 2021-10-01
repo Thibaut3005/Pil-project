@@ -3,13 +3,14 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
+    <link rel="stylesheet" href="http://localhost/wp-content/themes/pil/src/css/style.css">
+    <title> accueil </title>
     <?php wp_head(); ?>
 </head>
 
 <body> 
-<nav>
-    <a href="http://localhost/"><svg xmlns="http://www.w3.org/2000/svg" width="75.749" height="75.251" viewBox="0 0 75.749 75.251">
+<nav id="menu-container">
+    <a href="http://localhost/" id="logo"><svg xmlns="http://www.w3.org/2000/svg" width="75.749" height="75.251" viewBox="0 0 75.749 75.251">
   <g id="Group_17448" data-name="Group 17448" transform="translate(0 0)">
     <path id="Path_13718" data-name="Path 13718" d="M202.684,2529.559V2527.2H189.671v2.439l.971-.007v.007Z" transform="translate(-162.318 -2484.724)" fill="#171717"/>
     <path id="Path_13719" data-name="Path 13719" d="M186.788,2553.54l2.1-2.169a9.065,9.065,0,0,0,5.555,1.827h.35a9.161,9.161,0,0,0,6.84-2.942,9.666,9.666,0,0,0,2.807-6.88,9.255,9.255,0,0,0-1.868-5.674l2-2.073-1.666-1.665-1.987,1.987a9.464,9.464,0,0,0-6.3-2.282,9.571,9.571,0,0,0-6.966,2.873,9.323,9.323,0,0,0-2.9,6.813,9.55,9.55,0,0,0,2.387,6.374l-2.082,2.082Zm13.034-15.362a7.469,7.469,0,0,1,.02,10.531,6.927,6.927,0,0,1-5.188,2.21,7.012,7.012,0,0,1-4.587-1.617l-1.25-1.25v0a6.98,6.98,0,0,1-1.627-4.582,7.217,7.217,0,0,1,2.218-5.273,7.038,7.038,0,0,1,5.228-2.252A6.937,6.937,0,0,1,199.821,2538.178Z" transform="translate(-161.105 -2486.321)" fill="#171717"/>
@@ -22,14 +23,15 @@
 </svg></a>
 <?php wp_nav_menu( $args = array(
     "menu" => 'nav-menu',
-    "menu_class" => "menu-link"))
+    "menu_class" => "header-link",));
    
 ?>
-<a href=" http://localhost/contact/ ‎">Contact <svg xmlns="http://www.w3.org/2000/svg" width="13.53" height="8.71" viewBox="0 0 13.53 8.71">
-  <g id="arrow-right" transform="translate(0 0.354)">
-    <line id="Line_554" data-name="Line 554" x2="13.166" transform="translate(0 4.001)" fill="none" stroke="#fff" stroke-width="1"/>
-    <path id="Path_13528" data-name="Path 13528" d="M43,14l4,4-4,4" transform="translate(-33.972 -14)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
-  </g>
-</svg>
-</a>
+<?php wp_nav_menu( $args = array(
+    "menu" => 'contact',
+    "menu_class" => "contact-link",
+    'link_after' => '<div><img src="wordpress/wp-content/themes/pil/src/img/svg/arrow-conctact.svg" alt=""></div>'));
+   
+?>
+
+
 </nav>
