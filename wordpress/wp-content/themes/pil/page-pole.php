@@ -58,7 +58,7 @@ get_header();
     <a class="bouton-actualite" href="facebook.com">Suivez-nous <i class="fab fa-facebook-f"></i></a>
 </div>
 <div class="footer-pole">
-    
+    <?php get_template_part('banniere-cta')?>
 </div>
 
 <?php

@@ -8,14 +8,9 @@
 get_header(); 
 
 ?> 
-
-
-<p>essayons de faire un text pour voir la police</p>
-<p style="font-family:Arial, Helvetica, sans-serif">essayons de faire un text pour voir la police</p>
-
-
-
-
+<div class="banner-home">
+    <h1 class="punch-line"><?php the_field("punch_line") ?></h1>
+</div>
 <?php 
 
 get_footer();

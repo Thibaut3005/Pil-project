@@ -9,8 +9,10 @@
 
 
 //import fonts 
-
 @import "component/fonts.scss";
+
+//import scss home
+@import "component/banner-home.scss";
 
 //import scss pôle
 @import "component/banner_pole.scss";
@@ -20,6 +22,9 @@
 
 //import bannière défilante
 @import "component/banniere_defilante.scss";
+
+//import bannière CTA
+@import "component/banniere-cta.scss";
 
 //import mixin 
 @import "mixin.scss";

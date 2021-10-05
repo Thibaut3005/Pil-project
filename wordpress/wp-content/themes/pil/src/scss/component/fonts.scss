@@ -38,7 +38,8 @@ p {
 $h1-desktop: 90px;
 $h2-desktop: 50px;
 $h3-desktop: 34px;
-$big-p-desktop: 17px;
+$h4-desktop: 24px;
+$big-p-desktop: 20px;
 $little-p-desktop: 18px;
 
 //attribution au balise
@@ -50,4 +51,7 @@ h2{
 }
 h3{
     font-size: $h3-desktop;
+}
+h4{
+    font-size: $h4-desktop;
 }

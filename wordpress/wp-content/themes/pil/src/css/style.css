@@ -378,6 +378,27 @@ h3 {
   font-size: 34px;
 }
 
+h4 {
+  font-size: 24px;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.banner-home {
+  background-color: #000000;
+}
+
+.punch-line {
+  padding: 100px 0 0 150px;
+  margin: 0;
+  width: 900px;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -487,7 +508,7 @@ iframe {
   position: absolute;
   bottom: 70px;
   left: 30px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .email {
@@ -495,7 +516,7 @@ iframe {
   position: absolute;
   bottom: 40px;
   left: 30px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .team-pole {
@@ -526,7 +547,7 @@ iframe {
 
 .footer-pole {
   background-color: #000000;
-  height: 500px;
+  padding-top: 400px;
   margin-top: 50px;
 }
 
@@ -582,6 +603,35 @@ iframe {
     transform: translateX(-50%);
   }
 }
+.cta {
+  position: relative;
+}
+
+.image_cta {
+  width: 100vw;
+  height: auto;
+}
+
+.phrase_cta {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.titre_cta {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  color: #FFFFFF;
+  width: 1000px;
+}
+
+.yellow {
+  color: #FFC33B;
+}
+
 html {
   font-size: 62.5%;
 }
