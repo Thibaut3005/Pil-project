@@ -12,7 +12,14 @@
 
 @import "component/fonts.scss";
 
+//import scss pôle
+@import "component/banner_pole.scss";
+@import "component/team-pole.scss";
+@import "component/actualite-pole.scss";
+@import "component/footer-pole.scss";
 
+//import bannière défilante
+@import "component/banniere_defilante.scss";
 
 //import mixin 
 @import "mixin.scss";

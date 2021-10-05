@@ -1,0 +1,18 @@
+.actualite-pole{
+    margin: 0 0 0 10%;
+}
+.titre-actualite{
+    margin-bottom: 50px;
+}
+.bouton-actualite{
+    text-decoration: none;
+    color: $black;
+    border: 1px solid $black;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    font-size: $little-p-desktop;
+}
+.bouton-actualite:hover{
+    background-color: $black;
+    color: $white;
+}

@@ -33,3 +33,21 @@ p {
     font-family: 'II Vorkurs';
     
 }
+
+//font-size
+$h1-desktop: 90px;
+$h2-desktop: 50px;
+$h3-desktop: 34px;
+$big-p-desktop: 17px;
+$little-p-desktop: 18px;
+
+//attribution au balise
+h1{
+    font-size: $h1-desktop;
+}
+h2{
+    font-size: $h2-desktop;
+}
+h3{
+    font-size: $h3-desktop;
+}

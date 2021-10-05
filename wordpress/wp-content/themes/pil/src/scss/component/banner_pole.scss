@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.banner-pole{
+    background-color: $black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+.banner-titre{
+    width: 700px;
+    margin: 0 100px;
+}
+.banner-intro{
+    width: 700px;
+}
+.titre-banner-pole{
+    margin: 90px 0 0 0;
+    color: $white;
+}
+.intro-banner-pole{
+    margin: 552px 0 0 0;
+    color: $white;
+}
+.title-yellow{
+    color: $yellow;
+}
+.video{
+    margin-top: -150px;
+    display: flex;
+    justify-content: flex-end;
+}
+iframe{
+    width: 90%;
+    height: 520px;
+}
+.banniere-defilante{
+    margin: 100px 0 60px;
+}

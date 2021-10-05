@@ -1,0 +1,62 @@
+.team{
+    color: $black;
+    margin: 0 0 0 10%;
+}
+.team-list{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 10%;
+}
+.team-spec{
+    margin-top: 50px;
+}
+.team-all{
+    position: relative;
+    margin: 1%;
+    background-color: $yellow;
+}
+.team-all:hover{
+    cursor: pointer;
+    .photo-de-profil{
+        visibility: hidden;
+    }
+    .nom{
+        z-index: 3;
+    }
+    .role{
+        z-index: 3;
+    }
+    .email{
+        z-index: 3;
+    }
+}
+.photo-de-profil{
+    width: 400px;
+    height: 500px;
+    z-index: 2;
+    position: relative;
+}
+.nom{
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.role{
+    z-index: 1;
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    font-size: $big-p-desktop;
+}
+.email{
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    font-size: $big-p-desktop;
+}
+.team-pole{
+    padding-bottom: 200px;
+}
