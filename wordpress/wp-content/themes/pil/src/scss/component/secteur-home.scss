@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.secteur-home{
+    background-color: $light-black;
+    padding-bottom: 300px;
+
+}
+.texte-secteur{
+    margin-left: 200px;
+}
+.titre_sect_home{
+    width: 1000px;
+    margin: 0;
+    color: $white;
+}
+.texte_sect_home{
+    color: $grey;
+    margin: 30px 0;
+}
+.jsp{
+    width: 400px;
+    height: 500px;
+    background-color: $grey;
+}

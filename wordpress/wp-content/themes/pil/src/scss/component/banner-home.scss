@@ -4,11 +4,68 @@
     padding: 0;
 }
 .banner-home{
-    background-color: $black;
+    background-color: $light-black;
+}
+.header-home{
+    padding-top: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .punch-line{
-    padding: 100px 0 0 150px;
+    padding-left:150px;
     margin: 0;
-    width: 9    00px;
+    width: 900px;
     color: $white;
+}
+.fleche-home{
+    padding: 4rem;
+    margin-right: 86px;
+    transition: 0.5s;
+}
+.fleche-home:hover{
+    margin-bottom: -20px;
+    transition: 0.5s;
+}
+.video-home{
+    display: flex;
+    justify-content: flex-end;
+}
+.texte-home{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.intro-home{
+    color: $white;
+    width: 350px;
+    margin: 0 0 0 200px;
+}
+.titre-liste-home{
+    color: $white;
+    width: 160px;
+    margin-bottom: 30px;
+}
+li{
+    font-size: $little-p-desktop;
+    color: $grey;
+    list-style: none;
+    margin-bottom: 15px;
+}
+li::before{
+    content: "+";
+    color: $yellow;
+}
+.liste-2-home{
+    margin: 0 200px 0 0;
+}
+.liste_2{
+    width: 300px;
+}
+.banniere-defilante-home{
+    color: $white;
+    padding-bottom: 150px;
 }

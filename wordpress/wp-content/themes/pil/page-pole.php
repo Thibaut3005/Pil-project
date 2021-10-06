@@ -16,7 +16,7 @@ get_header();
         <h3 class="intro-banner-pole"><?php the_field('introduction_banner_pole'); ?></h2>
     </div>
 </div>
-<div class="video">
+<div class="video-pole">
     <?php 
     if(get_field('video')){
         echo get_field('video');
@@ -25,7 +25,7 @@ get_header();
     };
     ?>
 </div>
-<div class="banniere-defilante">
+<div class="banniere-defilante-pole">
     <?php get_template_part('banniere-defilante')?>
 </div>
 <div class="team-pole">
