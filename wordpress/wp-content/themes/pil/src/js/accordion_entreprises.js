@@ -17,7 +17,7 @@ for (i = 0; i < acc.length; i++) {
       
     } else {
         for (i=0 ; i< acc.length; i++) {
-           document.getElementsByClassName("secteur__panel")[i].style.display="none"
+           document.getElementsByClassName("secteur__panel")[i].style.display=
         }
       panel.style.display = "flex";
       

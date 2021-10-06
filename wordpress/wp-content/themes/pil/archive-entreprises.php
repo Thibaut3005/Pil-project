@@ -4,7 +4,7 @@ get_header();
 
 ?> 
 
-
+// Display the categories
 <div class="gauche_categories">
 <?php 
             $get_parent_cats = array(
@@ -56,6 +56,9 @@ get_header();
 </div>
 
 
+
+
+//Display the infos in the accordion
 <div class="droite">
         <? get_search_form(); ?>
                 <? if(have_rows('repeater_entreprises')) : while(have_rows('repeater_entreprises')) : the_row(); 
@@ -70,7 +73,7 @@ get_header();
                                 <div class="secteur__taxo">
                                         <h2><?= $titre_ent?></h2>
                                         <?php foreach(get_sub_field('taxonomie_entreprise') as $data){ ?>
-                                                <h6> <?php echo $data;?></h6>
+                                                <h6 class="secteur"> <?php echo $data;?></h6>
                                         <? }?>
                                 </div>
                                 <div class="secteur__button">
@@ -89,10 +92,3 @@ get_header();
                 <? endwhile; endif;?>
 
 </div>
-
-
-<?php 
-
-get_footer();
-
-?>
