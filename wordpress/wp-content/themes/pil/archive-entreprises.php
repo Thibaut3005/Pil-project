@@ -18,27 +18,28 @@ get_header();
                 $catID = $single_category->cat_ID;
 
                 echo '<li><a href=" ' . get_category_link( $catID ) . ' ">' . $single_category->name . '</a>'; //category name & link
-                 echo '<ul class="post-title">';
+        //          echo '<ul class="post-title">';
 
-                $query = new WP_Query( array( 'cat'=> $catID, 'posts_per_page'=>10 ) );
-               /* while( $query->have_posts() ):$query->the_post();
-                 echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
-                endwhile;*/
-                wp_reset_postdata();
+        //         $query = new WP_Query( array( 'cat'=> $catID, 'posts_per_page'=>10 ) );
+        //        /* while( $query->have_posts() ):$query->the_post();
+        //          echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
+        //         endwhile;*/
+        //         wp_reset_postdata();
 
-                echo '</ul>';
+        //         echo '</ul>';
                 $get_children_cats = array(
                     'child_of' => $catID //get children of this parent using the catID variable from earlier
                 );
 
                 $child_cats = get_categories( $get_children_cats );//get children of parent category
-                echo '<ul class="children">';
+                echo '<form action="" >';
                     foreach( $child_cats as $child_cat ){
                         //for each child category, get the ID
                         $childID = $child_cat->cat_ID;
 
                         //for each child category, give us the link and name
-                        echo '<a href=" ' . get_category_link( $childID ) . ' ">' . $child_cat->name . '</a>';
+                        // echo '<a href=" ' . get_category_link( $childID ) . ' ">' . $child_cat->name . '</a>';
+                       echo '<input type="checkbox" checked="checked" value="male" name="gender">' .$child_cat->name .'<br/>'; 
 
                          echo '<ul class="post-title">';
 
@@ -51,7 +52,7 @@ get_header();
                         echo '</ul>';
 
                     }
-                echo '</ul></li>';
+                echo '</form></li>';
             } //end of categories logic ?>
 </div>
 
