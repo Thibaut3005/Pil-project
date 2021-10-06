@@ -40,9 +40,9 @@ get_header();
             ?>
             <div class="team-all">
                 <img class="photo-de-profil" src="<?php echo $photo;?>" alt="">
-                <p class="nom"><?php the_sub_field('nom_grille');?></p>
-                <p class="role"><?php the_sub_field('role_grille');?></p>
-                <p class="email"><?php the_sub_field('email_grille');?></p>
+                <h3 class="nom"><?php the_sub_field('nom_grille');?></h3>
+                <h4 class="role"><?php the_sub_field('role_grille');?></h4>
+                <h4 class="email"><?php the_sub_field('email_grille');?></h4>
             </div>
             <?php endwhile;?>
         </div>
