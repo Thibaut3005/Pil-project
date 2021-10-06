@@ -381,8 +381,10 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 98vw;
   }
 
   #logo {
@@ -433,8 +435,13 @@ html {
     color: #FFFFFF;
   }
 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
   body {
-    background-color: #171717;
+    background-color: #000000;
   }
 
   #contact {
@@ -449,16 +456,58 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    border: 1px solid #707070;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
   }
 
   #contact-right {
     color: white;
     width: 75%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 5rem;
+  }
+
+  #contact {
+    color: white;
+  }
+
+  #contact-right div {
+    margin-left: 10rem;
+  }
+
+  #contact-mail {
+    margin-top: 5rem;
+  }
+
+  #contact-tel {
+    margin-top: 5rem;
+    position: relative;
+  }
+
+  #tel-plus {
+    position: relative;
+    top: -22px;
+    left: 0;
+  }
+
+  #contact-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  #contact-adress {
+    font-size: 2rem;
+    margin-top: 10rem;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
   }
 }
 
