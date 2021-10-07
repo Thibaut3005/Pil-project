@@ -1,0 +1,71 @@
+.searchform{
+    display: flex;
+    justify-content: center;
+    background-color: #1C1C1C;
+    width: 35rem;
+    height: 5rem;
+    border-radius: 30px;
+    #s{
+        background-color: #1C1C1C;
+        border: none;
+    }
+    #searchsubmit{
+        background-color: #1C1C1C;
+        border: none;
+        color: white;
+        margin-top: 10px;
+    }
+  }
+
+
+
+
+.droite{
+    color: white;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+  }
+  
+  .secteur__titre{
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+  }
+  
+  .secteur__taxo{
+    padding: 2rem;
+    display: flex;
+  }
+  
+  .secteur__panel{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info_entreprises{
+    padding: 2rem;
+  }
+  
+  .site_web{
+    color: orange;
+  }
+  
+  h6{
+    padding: 1rem;
+  }
+
+  .secteur{
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 8px;
+  }
+  
+.form-check{
+    color : white;
+    input {
+        margin: 1.2rem 0.5rem ; 
+        vertical-align: sub;
+    }
+    
+}

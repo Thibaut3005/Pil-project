@@ -30,6 +30,7 @@ function montheme_register_assets() {
     wp_enqueue_style('custom');
     
     
+    wp_enqueue_script( 'custom', get_theme_file_uri("./src/js/accordion_entreprises.js"), null,microtime(),true);
     }
 add_action('after_setup_theme','montheme_supports');
 add_action('wp_enqueue_scripts','montheme_register_assets');
