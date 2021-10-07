@@ -29,3 +29,21 @@ for (i = 0; i < acc.length; i++) {
 
 
 
+for (  i=0 ;i<document.getElementsByClassName("checkbox").length;i++){
+  document.getElementsByClassName("checkbox")[i].addEventListener("click",(e)=>{
+
+
+  if (document.querySelector(".checkbox").checked == true){
+    console.log(e.target.nextElementSibling.innerText)
+  } 
+  else {
+    console.log (e.target.nextElementSibling.innerText)
+  }
+
+
+
+  })
+  
+
+
+}

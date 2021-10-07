@@ -1,0 +1,18 @@
+/* Error: expected "{".
+ *    ,
+ * 74 | >>>>>>> 38a73d3f6984609796dc20ce406bf3cfca46dfc0
+ *    |                                                 ^
+ *    '
+ *   wordpress/wp-content/themes/pil/src/scss/main/mobile.scss 74:49  @import
+ *   wordpress/wp-content/themes/pil/src/scss/style.scss 23:9         root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 74 \2502  >>>>>>> 38a73d3f6984609796dc20ce406bf3cfca46dfc0\a    \2502                                                  ^\a    \2575 \a   wordpress/wp-content/themes/pil/src/scss/main/mobile.scss 74:49  @import\a   wordpress/wp-content/themes/pil/src/scss/style.scss 23:9         root stylesheet';
+}
